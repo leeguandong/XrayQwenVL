@@ -1,0 +1,2 @@
+# XrayQwenvl
+基于qwenvl微调一个多模态Xray识别的大模型
