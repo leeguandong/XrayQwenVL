@@ -1,0 +1,14 @@
+{
+    "framework": "pytorch",
+    "task": "text-generation",
+    "allow_remote": true,
+    "adapter_cfg": {
+        "model_id_or_path": "/home/image_team/image_team_docker_home/lgd/e_commerce_lmm/weights/qwen-vl-caht",
+        "model_revision": "master",
+        "sft_type": "lora",
+        "tuner_backend": "peft",
+        "template_type": "qwen",
+        "dtype": "bf16",
+        "system": "You are a helpful assistant."
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "chat_format": "chatml",
+  "do_sample": true,
+  "eos_token_id": 151645,
+  "max_new_tokens": 2048,
+  "max_window_size": 6144,
+  "pad_token_id": 151645,
+  "temperature": 0.3,
+  "top_k": 20,
+  "top_p": 0.7,
+  "transformers_version": "4.40.1"
+}

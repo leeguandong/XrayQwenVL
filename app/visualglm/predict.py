@@ -1,0 +1,17 @@
+from transformers import AutoTokenizer, AutoModel
+tokenizer = AutoTokenizer.from_pretrained("../visualglm-6b", trust_remote_code=True)
+model = AutoModel.from_pretrained("../visualglm-6b", trust_remote_code=True).half().cuda()
+image_path = "./fewshot-data/男性面相2.jpeg"
+print('输入：',image_path)
+response, history = model.chat(tokenizer, image_path, "从眼睛看这张照片可能的面相？", history=[])
+print("从眼睛看这张照片可能的面相："+response)
+response, history = model.chat(tokenizer, image_path, "从鼻子描述这张图片人物可能的面相？", history=[])
+print("从鼻子描述这张图片人物可能的面相："+response)
+response, history = model.chat(tokenizer, image_path, "从嘴巴描述这张图片人物可能的面相？", history=[])
+print("从嘴巴描述这张图片人物可能的面相："+response)
+response, history = model.chat(tokenizer, image_path, "从天庭描述这张图片人物可能的面相？", history=[])
+print("从天庭描述这张图片人物可能的面相："+response)
+response, history = model.chat(tokenizer, image_path, "这个人的精神状态怎么样", history=history)
+print('这个人的精神状态怎么样',response)
+# response, history = model.chat(tokenizer, image_path, "喜欢这张图片可能是什么样的年龄性别职业", history=history)
+# print('什么样的人会喜欢：',response)
