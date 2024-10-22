@@ -117,7 +117,8 @@ sh tools/swift/swift_finetune_qwenvl_lora_ds.sh
 
 ## 相关项目     
 1. [XrayLLaVA](https://github.com/leeguandong/XrayLLaVA)    
-
+2. [XrayLLama3.2Vision](https://github.com/leeguandong/XrayLLama3.2Vision)
+3. [XrayQwen2VL](https://github.com/leeguandong/XrayQwen2VL)      
 
 ## 免责声明
 
